@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | SecureDrive Automotive Solutions LLC</title>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Modern Reset & Base Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        :root {
+            --primary-deep: #0a192f;
+            --primary-blue: #1e3a8a;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #04db9b;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        /* -----------------------------------------
+           1. Header & Navigation
+        ----------------------------------------- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+            color: var(--primary-blue);
+        }
+
+        .logo-text h2 {
+            font-size: 1.3rem;
+            color: var(--primary-deep);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            font-size: 0.75rem;
+            display: block;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-blue);
+        }
+
+        /* -----------------------------------------
+           2. Premium Hero Section
+        ----------------------------------------- */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.92), rgba(30, 58, 138, 0.85)),
+                        url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+            padding: 120px 8% 140px 8%;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+        }
+
+        .hero-btn:hover {
+            background: #ffffff;
+            color: var(--primary-deep);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* -----------------------------------------
+           3. Minimalist Split Layout
+        ----------------------------------------- */
+        .main-container {
+            max-width: 1100px;
+            margin: 60px auto 100px auto;
+            padding: 0 20px;
+        }
+
+        .intro-text {
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            margin-bottom: 50px;
+            line-height: 1.8;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        /* Clean Rows Layout instead of Cards */
+        .policy-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .policy-row {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .policy-row:last-child {
+            border-bottom: none;
+        }
+
+        /* Left Side: Titles and Icons */
+        .row-meta {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            position: sticky;
+            top: 100px;
+        }
+
+        .row-icon {
+            font-size: 1.3rem;
+            color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.08);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .row-meta h3 {
+            font-size: 1.2rem;
+            color: var(--primary-deep);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        /* Right Side: Text Content */
+        .row-content p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        /* Custom alert box for SMS inside row */
+        .sms-info-alert {
+            margin-top: 15px;
+            background: var(--bg-light);
+            border-left: 4px solid var(--accent-blue);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            color: var(--primary-deep);
+            font-weight: 500;
+        }
+
+        /* -----------------------------------------
+           4. Premium Contact Banner (No Cards)
+        ----------------------------------------- */
+        .contact-banner {
+            background: var(--primary-deep);
+            color: #ffffff;
+            padding: 60px;
+            border-radius: 16px;
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .contact-banner-left h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .contact-banner-left p {
+            color: #cbd5e1;
+        }
+
+        .contact-grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .info-block {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .info-block span {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .info-block p {
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        /* -----------------------------------------
+           5. Responsive Media Queries
+        ----------------------------------------- */
+        @media (max-width: 968px) {
+            .hero h1 { font-size: 2.5rem; }
+            .navbar { padding: 15px 5%; }
+            .nav-links { display: none; }
+            .policy-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding-bottom: 30px;
+            }
+            .row-meta { position: static; }
+            .contact-banner {
+                grid-template-columns: 1fr;
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .contact-grid-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Premium Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-area">
+            <i class="fa-solid fa-shield-car logo-icon"></i>
+            <div class="logo-text">
+                <h2>SecureDrive</h2>
+                <span>Automotive Solutions</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" class="active">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Stunning Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Our Commitment to Your Privacy</h1>
+            <p>Transparency in how we handle your automotive data and personal information.</p>
+            <a href="#policy-details" class="hero-btn">Explore Policy <i class="fa-solid fa-arrow-down" style="margin-left: 8px;"></i></a>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-container" id="policy-details">
+
+        <!-- Intro Text -->
+        <div class="intro-text">
+            <p><strong>SecureDrive Automotive Solutions LLC</strong> respects your privacy. This Privacy Policy explains how we collect, use, store, and protect information when you visit our website, submit a form, request service, contact us, or opt in to receive SMS/text messages. <br><br><strong>Effective Date:</strong> [Insert Date]</p>
+        </div>
+
+        <!-- Clean Row Layout Section -->
+        <div class="policy-list">
+
+            <!-- Row 1 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>1. Information We Collect</h3>
+                </div>
+                <div class="row-content">
+                    <p>We may collect personal information you provide to us, including your name, phone number, email address, service address or vehicle location, vehicle year/make/model, VIN when needed, service request details, payment information, and any information submitted through our website forms, phone calls, text messages, or emails.</p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>2. How We Use Your Information</h3>
+                </div>
+                <div class="row-content">
+                    <p>We use your information to provide automotive locksmith, key replacement, key programming, diagnostic, and customer support services. This may include scheduling appointments, confirming service details, sending technician arrival updates, providing estimates, sending invoices, processing payments, responding to questions, following up after service, and improving our customer experience.</p>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-comment-sms"></i></div>
+                    <h3>3. SMS Communications</h3>
+                </div>
+                <div class="row-content">
+                    <p>By opting in to SMS communications, you agree to receive text messages from SecureDrive Automotive Solutions LLC regarding appointment updates, service notifications, technician arrival updates, customer care, estimates, invoices, follow-ups, and promotional offers if you have consented to marketing messages.</p>
+                    <div class="sms-info-alert">
+                        <i class="fa-solid fa-circle-info" style="color: var(--accent-blue); margin-right: 8px;"></i> Message and data rates may apply. Message frequency may vary. You may reply STOP at any time to unsubscribe or HELP for assistance.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-phone-slash"></i></div>
+                    <h3>4. SMS Consent & Phone Numbers</h3>
+                </div>
+                <div class="row-content">
+                    <p>We do not sell, rent, or share your SMS consent, phone number, or text messaging opt-in information with third parties or affiliates for marketing purposes. SMS opt-in information is used only to provide communication related to SecureDrive Automotive Solutions LLC services and approved messaging purposes.</p>
+                </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-handshake-slash"></i></div>
+                    <h3>5. Sharing of Information</h3>
+                </div>
+                <div class="row-content">
+                    <p>We do not sell your personal information. We may share limited information only when necessary to operate our business, provide requested services, process payments, manage scheduling, comply with legal obligations, prevent fraud, or work with trusted service providers who help us operate our website, communications, payment processing, or customer management systems.</p>
+                </div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>6. Marketing Communications</h3>
+                </div>
+                <div class="row-content">
+                    <p>If you opt in to receive marketing messages, we may send promotional offers, seasonal reminders, discounts, special announcements, and service updates. You can opt out of marketing SMS at any time by replying STOP.</p>
+                </div>
+            </div>
+
+            <!-- Row 7 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>7. Data Security</h3>
+                </div>
+                <div class="row-content">
+                    <p>We take reasonable steps to protect your personal information from unauthorized access, misuse, loss, or disclosure. However, no electronic transmission, website, or storage system can be guaranteed to be 100% secure.</p>
+                </div>
+            </div>
+
+            <!-- Row 8 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-cookie-bite"></i></div>
+                    <h3>8. Cookies & Website Tracking</h3>
+                </div>
+                <div class="row-content">
+                    <p>Our website may use cookies, analytics tools, or similar technologies to understand website traffic, improve website performance, and enhance user experience. You may adjust your browser settings to refuse cookies, but some website features may not function properly.</p>
+                </div>
+            </div>
+
+            <!-- Row 9 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3>9. Payment Information</h3>
+                </div>
+                <div class="row-content">
+                    <p>Payment information may be processed through secure third-party payment processors. We do not store full credit card details unless specifically handled by an approved secure payment provider.</p>
+                </div>
+            </div>
+
+            <!-- Row 10 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-link"></i></div>
+                    <h3>10. Third-Party Links</h3>
+                </div>
+                <div class="row-content">
+                    <p>Our website may contain links to third-party websites or services. We are not responsible for the privacy practices, content, or security of third-party websites.</p>
+                </div>
+            </div>
+
+            <!-- Row 11 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>11. Your Choices</h3>
+                </div>
+                <div class="row-content">
+                    <p>You may contact us to update your information, request that we stop contacting you, or ask questions about how your information is used. For SMS messages, reply STOP to unsubscribe or HELP for assistance.</p>
+                </div>
+            </div>
+
+            <!-- Row 12 -->
+            <div class="policy-row">
+                <div class="row-meta">
+                    <div class="row-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                    <h3>12. Changes to This Policy</h3>
+                </div>
+                <div class="row-content">
+                    <p>We may update this Privacy Policy from time to time. Updates will be posted on this website with a revised effective date. Continued use of our website or services means you accept the updated Privacy Policy.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Section 13: Full Width Modern Contact Banner (No Card Layout) -->
+        <section class="contact-banner">
+            <div class="contact-banner-left">
+                <h3>13. Contact Us</h3>
+                <p>If you have questions about this Privacy Policy or how your information is handled, please reach out to us through any of our official channels.</p>
+            </div>
+            <div class="contact-grid-info">
+                <div class="info-block">
+                    <span>Company</span>
+                    <p>SecureDrive Automotive Solutions LLC</p>
+                </div>
+                <div class="info-block">
+                    <span>Phone Support</span>
+                    <p>1-877-756-2576</p>
+                </div>
+                <div class="info-block">
+                    <span>Email Address</span>
+                    <p>[Insert Business Email]</p>
+                </div>
+                <div class="info-block">
+                    <span>Service Area</span>
+                    <p>Southern California</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
