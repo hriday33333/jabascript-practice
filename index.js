@@ -1,3 +1,6 @@
-const number = 52.22
-const rounded = parseInt(number)
-console.log(rounded);
+if(10>20){
+  console.log('10 is gater than 20')
+}
+else{
+  console.log('10 is less than 20')
+}
